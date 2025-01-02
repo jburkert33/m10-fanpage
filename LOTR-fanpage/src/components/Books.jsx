@@ -21,10 +21,11 @@ export default function Books() {
             <h1>Books</h1>
             <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
                 {books.map(book => (
-                    <BookCard book={book} ket={book.id} />
+                    <BookCard book={book} key={book.id} />
                 ))}
             </div>
         </div>
     )
+
 
 }
