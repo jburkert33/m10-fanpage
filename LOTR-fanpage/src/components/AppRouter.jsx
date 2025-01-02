@@ -1,11 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "/src/App";
 import NotFound from "./NotFound";
-import Landing from "./Landing";
-import AgentList from "./AgentList";
-import ConfirmDelete from "./ConfirmDelete";
-import AgentForm from "./AgentForm";
-import ErrorPage from "./ErrorPage";
+import CharacterList from "./characterList";
 
 
 function AppRouter() {
@@ -17,29 +13,15 @@ function AppRouter() {
       children: [
         {
           path: "/",
-          element: <Landing />,
+          element: <CharacterList />,
         },
         {
-          path: "agents",
-          element: <AgentList />,
-          children: [
-              {
-                path: "delete/:id",
-                element: <ConfirmDelete />,
-              },
-              {
-                path: "add",
-                element: <AgentForm />,
-              },
-              {
-                path: "edit/:id",
-                element: <AgentForm />,
-              }
-          ]
+          path: "/characters",
+          element: <CharacterList />,
         },
         {
           path: "/error",
-          element: <ErrorPage />,
+          element: <CharacterList />,
         }
       ]
     }

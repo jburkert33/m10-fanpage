@@ -1,0 +1,14 @@
+@URL = https://lotrapi.co/api/v1
+
+GET {{URL}}/characters HTTP/1.1
+
+###
+
+GET {{URL}}/species HTTP/1.1
+
+###
+
+GET {{URL}}/characters?page=2 HTTP/1.1
+
+###
+
