@@ -12,3 +12,7 @@ GET {{URL}}/characters?page=2 HTTP/1.1
 
 ###
 
+GET {{URL}}/characters/1 HTTP/1.1
+
+###
+

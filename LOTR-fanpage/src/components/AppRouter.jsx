@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "/src/App";
 import NotFound from "./NotFound";
 import CharacterList from "./characterList";
+import CharacterPage from "./CharacterPage";
 
 
 function AppRouter() {
@@ -18,6 +19,10 @@ function AppRouter() {
         {
           path: "/characters",
           element: <CharacterList />,
+        },
+        {
+          path: "/characters/1",
+          element: <CharacterPage id="1" />,
         },
         {
           path: "/error",

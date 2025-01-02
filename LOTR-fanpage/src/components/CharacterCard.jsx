@@ -5,7 +5,7 @@ export default function CharacterCard({ character }) {
   const [species, setSpecies] = useState([]);
 
   useEffect(() => {
-    fetch(`${character.species}`)
+    fetch(`${character.race}`)
       .then((response) => response.json())
       .then((data) => setSpecies(data.name))
       .catch((error) => {
