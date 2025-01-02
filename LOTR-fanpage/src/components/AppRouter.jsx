@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Landing from "./Landing";
 import App from "/src/App";
-import Movies from "./Films";
+import Films from "./Films";
 import Books from "./Books";
 
 
@@ -11,18 +11,18 @@ function AppRouter() {
     const routes = [
         {
             path: "/",
-            element: <Landing />,
+            element: <App />,
             children: [
                 {
                     path: "/",
                     element: <Landing />,
                 },
                 {
-                    path: "films",
-                    element: <Movies />,
+                    path: "/films",
+                    element: <Films />,
                 },
                 {
-                    path: "books",
+                    path: "/books",
                     element: <Books />
                 }
             ]

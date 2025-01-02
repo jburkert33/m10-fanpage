@@ -8,7 +8,7 @@ export default function Books() {
     useEffect(() => {
         fetch('https://lotrapi.co/api/v1/books')
             .then(res => res.json())
-            .then(setBooks)
+            .then(data => setBooks(data.results))
             .catch(console.errors)
     }, [])
 

@@ -8,7 +8,7 @@ export default function Films() {
     useEffect(() => {
         fetch('https://lotrapi.co/api/v1/films')
             .then(res => res.json())
-            .then(setFilms)
+            .then(data => setFilms(data.results))
             .catch(console.error)
     }, [])
 
@@ -19,7 +19,7 @@ export default function Films() {
         <div className='container'>
             <h1>Films</h1>
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                {films.results.map(film => {
+                {films.map(film => {
                     <FilmCard film={film} key={film.id} />
                 })}
             </div>
