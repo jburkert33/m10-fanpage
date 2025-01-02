@@ -19,6 +19,11 @@ function Nav() {
                         Agencies
                     </Link>
                 </li>
+                <li className="nav-item">
+                    <Link to="/map" className="nav-link">
+                        Map
+                    </Link>
+                </li>
             </ul>
         </div>
     );

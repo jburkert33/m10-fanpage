@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Landing from "./components/Landing";
 import Nav from "./components/Nav";
+import Map from "./components/Map";
 
 const componentMap = {
-  "landing": Landing
+  "landing": Landing,
+  "Map": Map
 }
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       <Nav view={view} setView={setView} />
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/Map" element={<Map setView={setView} />} />
         </Routes>
       </main>
     </Router>

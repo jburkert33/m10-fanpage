@@ -4,6 +4,7 @@ $font-stack-highlight: "Roboto Condensed", $font-stack-safe;
 
 $color-background: rgb(20, 56, 41);
 $color-highlight: rgb(43, 91, 63);
+$color-text: rgb(251, 200, 65);
 $color-highlight-light: lighten($color-highlight, 10%);
 $color-highlight-dark: darken($color-highlight, 10%);
 
@@ -51,10 +52,12 @@ h1 {
 
 h2 {
   font-size: 24pt;
+  color: $color-text ;
 }
 
 h3 {
   font-size: 18pt;
+  color: $color-text ;
 }
 
 h4 {
@@ -72,6 +75,7 @@ h6 {
 p {
   font-size: 12pt;
   margin-bottom: 12pt;
+  color: $color-text;
 }
 
 strong {
@@ -97,6 +101,7 @@ a {
     color: $color-foreground;
   }
 }
+
 
 .centered {
   position: absolute;
