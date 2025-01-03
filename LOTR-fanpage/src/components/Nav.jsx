@@ -1,6 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import CharacterList from "./characterList";
-import CharacterPage from "./CharacterPage";
+import CharacterList from "./characterList"
 import Landing from "./Landing";
 import Films from "./Films";
 import Books from "./Books";
@@ -18,20 +17,18 @@ function Nav() {
                     Home
                     </Link>
                 </li>
-                {/* Link for Agents page */}
                 <li className="nav-item">
                     <Link to="/Books" className="nav-link"id="nav-title">
                         Books
                     </Link>
                 </li>
-                {/* Link for Agencies page */}
                 <li className="nav-item">
                     <Link to="/Films" className="nav-link"id="nav-title">
                         Films
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/characterList" className="nav-link"id="nav-title">
+                    <Link to="/characters" className="nav-link"id="nav-title">
                         Characters
                     </Link>
                 </li>
