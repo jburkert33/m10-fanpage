@@ -15,18 +15,17 @@ $map-dot-size: 15px;
 $transition-time: 0.25s;
   
 html {
-  background: $color-background !important;
   color: $color-foreground;
   text-align: center;
   font-family: $font-stack-main;
+  background-color: $color-highlight;
 }
 
 body {
   max-width: 1200px;
   margin: 20px auto;
-  padding: 0 100px;
   overflow-x: hidden;
-  background: $color-background;
+  background: $color-highlight;
 }
 
 .description {
@@ -130,7 +129,7 @@ a {
   background-color: $color-background;
 
   > img {
-    width: 100%;
+    width: 150%;
     position: relative;
     margin: 0;
     padding: 0;
@@ -200,8 +199,4 @@ a {
 
 .p{
   align-items: center;
-}
-
-body{
-  background-color: $color-background;
 }

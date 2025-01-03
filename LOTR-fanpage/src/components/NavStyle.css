@@ -8,12 +8,9 @@
     margin-right: 20px; 
 }
 
-#nav-title{
-    color: #2B5B3F;
-}
-
 .nav-link {
     color: #2B5B3F;
+    background-color: #E9972D;
     padding: 12px 20px; 
     font-weight: bold; 
     transition: background-color 0.3s ease, color 0.3s ease; 
@@ -21,13 +18,12 @@
 
 
 .nav-link.active {
-    background-color: #111; 
     color: #E9972D; 
 }
 
 .nav-link:hover {
-    background-color: #f1c40f; 
-    color: #999; 
+    background-color: #E9972D; 
+    color: #143829;
 }
 
 
