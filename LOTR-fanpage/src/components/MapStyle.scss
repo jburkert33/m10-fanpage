@@ -6,11 +6,11 @@ $color-background: rgb(20, 56, 41);
 $color-highlight: rgb(43, 91, 63);
 $color-text: rgb(251, 200, 65);
 $color-highlight-light: lighten($color-highlight, 10%);
-$color-highlight-dark: darken($color-highlight, 10%);
+$color-highlight-dark: $color-highlight;
 
 $color-foreground: invert($color-background);
   
-$map-dot-size: 20px;
+$map-dot-size: 15px;
 
 $transition-time: 0.25s;
   
@@ -81,7 +81,7 @@ p {
 strong {
   font-weight: 900;
   font-family: $font-stack-highlight;
-  color: $color-foreground;
+  color: $color-text;
 }
     
 a {
@@ -123,6 +123,7 @@ a {
   padding: 20px;
   box-sizing: border-box;
   margin: 0 auto;
+  color: $color-background;
 
   > img {
     width: 100%;
@@ -138,18 +139,18 @@ a {
     position: absolute;
     width: $map-dot-size;
     height: $map-dot-size;
-    border-radius: $map-dot-size / 2; // Replaced with native property
-    opacity: 0.8; // Replaced with native property
-    transform: translate(-50%, -50%); // Replaced with native property
+    border-radius: $map-dot-size / 2; 
+    opacity: 1; 
+    transform: translate(-50%, -50%); 
     transition: opacity $transition-time ease-in-out, 
                 width $transition-time ease-in-out, 
                 height $transition-time ease-in-out, 
                 z-index $transition-time ease-in-out;
-    background: rgba($color-background, 0.15); // Replaced with rgba
+    background: rgba($color-background, 0.8); // Replaced with rgba
     border: $map-dot-size / 8 solid $color-highlight-dark;
 
     .content {
-      opacity: 1;
+      opacity: 0;
       transition: opacity $transition-time ease-in-out;
       width: 100%;
       height: 100%;
@@ -165,7 +166,7 @@ a {
       opacity: 1;
       width: 300px;
       height: 220px;
-      color: $color-foreground;
+      color: $color-text;
       z-index: 1;
       transition: opacity $transition-time ease-in-out, 
                   width $transition-time ease-in-out, 
