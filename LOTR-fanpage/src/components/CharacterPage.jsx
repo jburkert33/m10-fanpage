@@ -68,7 +68,7 @@ const CharacterPage = ({ id }) => {
             <p><strong>Height:</strong> {character.height}</p>
             <p><strong>Hair:</strong> {character.hair_color}</p>
             <p><strong>Realm:</strong> {character.realm}</p>
-            <p><strong>Weapons:</strong> {character.weapons.toString()}</p>
+            <p><strong>Weapons:</strong> {character.weapons ? character.weapons.toString() : "none"}</p>
             <ul><strong>Appears in:</strong>
                 <ul>Films: 
                     {character.films ? character.films.map(film => 
