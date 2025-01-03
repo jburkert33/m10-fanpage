@@ -54,12 +54,6 @@ h1 {
   margin-bottom: 12pt;
   color: $color-text;
 }
-
-strong {
-  font-weight: 900;
-  font-family: $font-stack-highlight;
-  color: $color-text;
-}
     
 a {
   transition: color $transition-time ease-in-out;
@@ -179,4 +173,10 @@ a {
 
 #title-description{
   color: $color-background;
+}
+
+#subTitle-strong{
+  font-weight: 900;
+  font-family: $font-stack-highlight;
+  color: $color-text;
 }
