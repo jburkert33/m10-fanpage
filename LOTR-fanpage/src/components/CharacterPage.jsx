@@ -70,12 +70,12 @@ const CharacterPage = ({ id }) => {
             <p><strong>Realm:</strong> {character.realm}</p>
             <p><strong>Weapons:</strong> {character.weapons ? character.weapons.toString() : "none"}</p>
             <ul><strong>Appears in:</strong>
-                <ul>Films: 
+                <ul className='list-unstyled'>Films: 
                     {character.films ? character.films.map(film => 
                         <li>{film}</li>
                     ) : <li>None</li>}
                 </ul>
-                <ul>Books:
+                <ul className='list-unstyled'>Books:
                     {character.books ? character.books.map(book =>
                         <li>{book}</li>
                     ) : <li>None</li>}

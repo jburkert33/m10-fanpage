@@ -13,7 +13,7 @@ const CharacterList = () => {
             .then(data => setCharacters(data.results))
             .catch((error) => {
                 console.error(error);
-                navigate("/error", { state: { error } });
+                navigate("/", { state: { error } });
               });
     }, []);
 
