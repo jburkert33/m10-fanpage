@@ -16,7 +16,7 @@ export default function Films() {
         return null;
     }
     return (
-        <div className='container'>
+        <div className='container films-container'>
             <h1>Films</h1>
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 {films.map(film => (

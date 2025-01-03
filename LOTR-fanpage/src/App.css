@@ -1,42 +1,84 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
 
 .card {
-  padding: 2em;
+    padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+    color: #888;
+}
+
+.landing-container {
+    height: 100vh;
+    width: 100vw;
+    padding-right: 20px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Bilbo', serif;
+}
+
+.landing-title {
+    font-size: 4.5em;
+    margin-top: 0;
+    padding-top: 2em;
+}
+
+.landing-subtitle {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.book-cover {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.book-image {
+    width: 350px;
+    height: 500px;
+}
+
+.books-container,
+.films-container {
+    font-family: 'Bilbo', serif;
 }

@@ -6,7 +6,6 @@ import Films from "./Films";
 import Books from "./Books";
 
 
-
 function AppRouter() {
     const routes = [
         {
