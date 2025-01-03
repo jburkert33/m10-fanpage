@@ -1,0 +1,202 @@
+$font-stack-safe: Helvetica, sans-serif;
+$font-stack-main: "Roboto", $font-stack-safe;
+$font-stack-highlight: "Roboto Condensed", $font-stack-safe;
+
+$color-background: rgb(20, 56, 41);
+$color-highlight: rgb(43, 91, 63);
+$color-text: rgb(251, 200, 65);
+$color-highlight-light: lighten($color-highlight, 10%);
+$color-highlight-dark: $color-highlight;
+
+$color-foreground: $color-background;
+  
+$map-dot-size: 15px;
+
+$transition-time: 0.25s;
+  
+html {
+  color: $color-foreground;
+  text-align: center;
+  font-family: $font-stack-main;
+  background-color: $color-highlight;
+}
+
+body {
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow-x: hidden;
+  background: $color-highlight;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba($color-text, 0.3); 
+}
+
+div, img, footer {
+  position: relative;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: $font-stack-highlight;
+  font-weight: 300;
+  background-color: $color-background;
+  color: $color-text;
+}
+
+h1 {
+  font-size: 36pt;
+  color: $color-text;
+}
+
+h2 {
+  font-size: 24pt;
+  color: $color-text ;
+}
+
+h3 {
+  font-size: 18pt;
+  color: $color-text ;
+}
+
+h4 {
+  font-size: 16pt;
+}
+
+h5 {
+  font-size: 14pt;
+}
+
+h6 {
+  font-size: 12pt;
+}
+
+p {
+  font-size: 10pt;
+  margin-bottom: 12pt;
+  color: $color-text;
+}
+
+strong {
+  font-weight: 900;
+  font-family: $font-stack-highlight;
+  color: $color-text;
+}
+    
+a {
+  transition: color $transition-time ease-in-out;
+  font-family: $font-stack-highlight;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-highlight-light;
+
+  &:visited {
+    color: $color-highlight;
+  }
+
+  li.active &,
+  &:hover,
+  &:active {
+    color: $color-foreground;
+  }
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-y {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  
+.distribution-map {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: $color-background;
+
+  > img {
+    width: 150%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: $color-background;
+  }
+
+  .map-point {
+    cursor: pointer;
+    outline: none;
+    z-index: 0;
+    position: absolute;
+    width: $map-dot-size;
+    height: $map-dot-size;
+    border-radius: $map-dot-size / 2; 
+    opacity: 1; 
+    transform: translate(-50%, -50%); 
+    transition: opacity $transition-time ease-in-out, 
+                width $transition-time ease-in-out, 
+                height $transition-time ease-in-out, 
+                z-index $transition-time ease-in-out;
+    background: rgba($color-background, 1); 
+    border: $map-dot-size / 8 solid $color-background;
+
+    .content {
+      opacity: 0;
+      transition: opacity $transition-time ease-in-out;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: overlay;
+    }
+
+    &:active,
+    &:focus {
+      margin: 0;
+      padding: 0;
+      opacity: 0.8;
+      width: 300px;
+      height: 220px;
+      color: $color-text;
+      background-color: $color-highlight;
+      z-index: 1;
+      transition: opacity $transition-time ease-in-out, 
+                  width $transition-time ease-in-out, 
+                  height $transition-time ease-in-out;
+
+      .content {
+        opacity: 1;
+        transition: opacity $transition-time ease-in-out, 
+                    height 0 ease-in-out, 
+                    overflow 0 ease-in-out;
+        overflow: hidden;
+        
+        a:hover,
+        a:active {
+          color: $color-highlight;
+        }
+      }
+    }
+  }
+}
+
+#MapTitle{
+  color: $color-text;
+}
+
+.p{
+  align-items: center;
+}
