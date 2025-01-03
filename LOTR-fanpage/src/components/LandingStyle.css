@@ -1,0 +1,47 @@
+.landing-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Bilbo', serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.landing-title {
+    font-size: 4.5em;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.landing-subtitle {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.book-cover {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.book-image {
+    width: 350px;
+    height: 500px;
+}
+
+.books-container,
+.films-container {
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Bilbo', serif;
+}
+
+.books-container h1,
+.films-container h1 {
+    font-size: 3em;
+}
