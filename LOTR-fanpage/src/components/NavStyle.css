@@ -1,11 +1,11 @@
 .nav {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 50px;
     display: flex;
 }
 
 .nav-item {
-    margin-right: 20px; 
+    margin-left: 40px;
 }
 
 .nav-link {
@@ -24,6 +24,12 @@
 .nav-link:hover {
     background-color: #E9972D; 
     color: #143829;
+}
+
+#nav-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2B5B3F
 }
 
 

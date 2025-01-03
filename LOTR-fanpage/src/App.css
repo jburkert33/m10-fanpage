@@ -50,3 +50,8 @@
 .films-container h1 {
     font-size: 3em;
 }
+
+body{
+    background-color: #143829;
+    align-content: center;
+}
