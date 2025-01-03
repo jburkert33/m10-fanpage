@@ -18,7 +18,7 @@ const CharacterList = () => {
     }, []);
 
     return (
-        <div>
+        <div className='container'>
             <h1>Heroes of Middle Earth</h1>
             {characters.length == 0 ?
                 <div className="alert alert-warning py-4">
