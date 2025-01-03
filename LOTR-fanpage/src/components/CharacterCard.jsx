@@ -14,7 +14,7 @@ export default function CharacterCard({ character }) {
   });
 
   return (
-    <Link to={`/characters/${character.id}`}>
+    <Link to={`/characters/${character.id}`} className="text-decoration-none">
       <div className="col">
         <div className="card h-100">
           <div>
