@@ -15,7 +15,7 @@ $map-dot-size: 15px;
 $transition-time: 0.25s;
   
 html {
-  background: $color-background;
+  background: $color-background !important;
   color: $color-foreground;
   text-align: center;
   font-family: $font-stack-main;
@@ -26,12 +26,13 @@ body {
   margin: 20px auto;
   padding: 0 100px;
   overflow-x: hidden;
+  color: $color-background;
 }
 
 .description {
   max-width: 600px;
   margin: 0 auto;
-  color: rgba($color-foreground, 0.3); // Replace transparentize with rgba
+  color: rgba($color-foreground, 0.3); 
 }
 
 div, img, footer {

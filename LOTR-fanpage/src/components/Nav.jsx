@@ -7,6 +7,11 @@ function Nav() {
     return (
         <div className="d-flex align-items-center">
             <ul className="nav my-4">
+                <li className="nav-item">
+                    <Link to="/" className="nav-link">
+                    Home
+                    </Link>
+                </li>
                 {/* Link for Agents page */}
                 <li className="nav-item">
                     <Link to="/list" className="nav-link">

@@ -7,7 +7,7 @@ export function Map() {
             <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css' />
             <link href='//fonts.googleapis.com/css?family=Roboto:100,300,400,700,900' rel='stylesheet' type='text/css' />
             <h1> Middle Earth </h1>
-            <p className="description"> Description Here <strong>Click the points to expand them.</strong></p>
+            <p className="description"> An interactive map of Middle Earth <strong>Click the points to expand them.</strong></p>
             <div className="distribution-map">
                 <img class="map-image-container" src="Images\Map.jpeg" alt="Middle Earth" style={{ width: '100%', height: 'auto'}}/>
                 <button className="map-point" style={{ top: '30%', left: '36%' }}>
