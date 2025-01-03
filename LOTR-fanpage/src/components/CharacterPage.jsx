@@ -60,27 +60,31 @@ const CharacterPage = ({ id }) => {
                     alt={character.name} 
                 />
             </div>
-            <h1>{character.name}</h1>
-            <p><strong>Race:</strong> {character.race}</p>
-            <p><strong>Gender:</strong> {character.gender}</p>
-            <p><strong>Birth:</strong> {character.date_of_birth}</p>
-            <p><strong>Death:</strong> {character.date_of_death}</p>
-            <p><strong>Height:</strong> {character.height}</p>
-            <p><strong>Hair:</strong> {character.hair_color}</p>
-            <p><strong>Realm:</strong> {character.realm}</p>
-            <p><strong>Weapons:</strong> {character.weapons ? character.weapons.toString() : "none"}</p>
-            <ul><strong>Appears in:</strong>
-                <ul className='list-unstyled'>Films: 
-                    {character.films ? character.films.map(film => 
-                        <li>{film}</li>
-                    ) : <li>None</li>}
-                </ul>
-                <ul className='list-unstyled'>Books:
-                    {character.books ? character.books.map(book =>
-                        <li>{book}</li>
-                    ) : <li>None</li>}
-                </ul>
-            </ul>
+            <div className='container content-align-center'>
+                <div className='content-align-left'>
+                    <h1>{character.name}</h1>
+                    <p className='text-left'><strong>Race:</strong> {character.race}</p>
+                    <p className='text-left'><strong>Gender:</strong> {character.gender}</p>
+                    <p className='text-left'><strong>Birth:</strong> {character.date_of_birth}</p>
+                    <p className='text-left'><strong>Death:</strong> {character.date_of_death}</p>
+                    <p><strong>Height:</strong> {character.height}</p>
+                    <p><strong>Hair:</strong> {character.hair_color}</p>
+                    <p><strong>Realm:</strong> {character.realm}</p>
+                    <p><strong>Weapons:</strong> {character.weapons ? character.weapons.toString() : "none"}</p>
+                    <ul><strong>Appears in:</strong>
+                        <ul className='list-unstyled'>Films: 
+                            {character.films ? character.films.map(film => 
+                                <li>{film}</li>
+                            ) : <li>None</li>}
+                        </ul>
+                        <ul className='list-unstyled'>Books:
+                            {character.books ? character.books.map(book =>
+                                <li>{book}</li>
+                            ) : <li>None</li>}
+                        </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 };
