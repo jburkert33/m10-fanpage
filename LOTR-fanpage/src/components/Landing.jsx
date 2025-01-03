@@ -1,4 +1,4 @@
-
+import './LandingStyle.css';
 
 export default function Landing() {
     return (
