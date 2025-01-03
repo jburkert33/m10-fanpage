@@ -1,11 +1,11 @@
 .nav {
     list-style-type: none;
-    padding-left: 50px;
+    margin-left: 50px;
     display: flex;
 }
 
 .nav-item {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .nav-link {

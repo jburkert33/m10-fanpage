@@ -18,19 +18,17 @@ html {
   color: $color-background;
   text-align: center;
   font-family: $font-stack-main;
-  background-color: $color-highlight;
 }
 
 body {
   margin: 20px auto;
   overflow-x: hidden;
-  background: $color-background;
 }
 
 .description {
   max-width: 600px;
   margin: 0 auto;
-  color: rgba($color-text, 0.3); 
+  color: rgba($color-background, 0.5); 
 }
 
 div, img, footer {
@@ -51,29 +49,7 @@ h1 {
   color: $color-text;
 }
 
-h2 {
-  font-size: 24pt;
-  color: $color-text ;
-}
-
-h3 {
-  font-size: 18pt;
-  color: $color-text ;
-}
-
-h4 {
-  font-size: 16pt;
-}
-
-h5 {
-  font-size: 14pt;
-}
-
-h6 {
-  font-size: 12pt;
-}
-
-p {
+#map-content{
   font-size: 10pt;
   margin-bottom: 12pt;
   color: $color-text;
@@ -192,9 +168,15 @@ a {
 }
 
 #MapTitle{
-  color: $color-text;
+  color: $color-background
 }
 
 #subTitle{
   color: $color-text;
+  opacity: 1;
+  font-size: 24pt;
+}
+
+#title-description{
+  color: $color-background;
 }
